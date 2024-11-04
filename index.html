@@ -41,9 +41,9 @@
 					<div class="row-product hidden">
 						<div class="cart-product">
 							<div class="info-cart-product">
-								<span class="cantidad-producto-carrito">1</span>
-								<p class="titulo-producto-carrito">Zapatos Nike</p>
-								<span class="precio-producto-carrito">$80</span>
+								<span class="cantidad-producto-carrito"></span>
+								<p class="titulo-producto-carrito"></p>
+								<span class="precio-producto-carrito">$</span>
 							</div>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -66,12 +66,21 @@
 						<h3>Total:</h3>
 						<span class="total-pagar">$200</span>
 					</div>
+					<button id="comprarBtn" class="btn-comprar">Comprar</button>
 					<p class="cart-empty">El carrito está vacío</p>
 				</div>
 			</div>
 		</header>
+		<div class="filtro">
+			<h2>Filtro por Categoria</h2>
+			<button id="todosBtn" class="emoji-button">Sin Filtro 😎</button>
+			<button id="zapasBtn" class="emoji-button">Zapatillas 👟</button>
+			<button id="aurisBtn" class="emoji-button">Auriculares 🎧</button>
+			<button id="perfumeBtn" class="emoji-button">Perfumes 🧴</button>
+			<button id="relojBtn" class="emoji-button">Relojes ⌚</button>
+		</div>
 		<div class="container-items">
-			<div class="item">
+			<div class="item" id="zapas">
 				<figure>
 					<img
 						src="./assets/z-nike.jpg"
@@ -84,7 +93,7 @@
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
-			<div class="item">
+			<div class="item" id="auriculares">
 				<figure>
 					<img
 						src="./assets/auris.jpg"
@@ -97,7 +106,7 @@
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
-			<div class="item">
+			<div class="item" id="relojes">
 				<figure>
 					<img
 						src="./assets/reloj.jpg"
@@ -110,7 +119,7 @@
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
-			<div class="item">
+			<div class="item" id="smartw">
 				<figure>
 					<img
 						src="./assets/smart-w.jpg"
@@ -123,12 +132,12 @@
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
-			<div class="item">
+			<div class="item" id="perfume">
 				<figure>
 					<img
 						src="./assets/perfume.jpg"
 						alt="producto"
-					/>
+					/>	
 				</figure>
 				<div class="info-product">
 					<h2>Perfume</h2>
